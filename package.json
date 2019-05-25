@@ -1,0 +1,25 @@
+{
+  "name": "url_shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/loader.ts",
+  "scripts": {
+    "start": "node src/loader.js",
+    "dev": "nodemon --watch 'src/' --exec \"ts-node src/loader.ts\" -e ts",
+    "production": "pm2 start src/loader.ts --name url_shortener"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.0",
+    "pm2": "^3.5.1",
+    "ts-node": "^8.1.1",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
