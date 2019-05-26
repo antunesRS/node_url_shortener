@@ -1,0 +1,9 @@
+input[type=submit]{
+    background-color: blue;
+    color: white;
+    width: 20%;
+}
+
+#result {
+    display: none;
+}

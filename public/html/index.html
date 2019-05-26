@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Encurtador de URLs</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <h1>Encurtador de URLs</h1>
+        <form id="form">
+            <input id="input_form" type="url" placeholder="Digite a URL"/>
+            <input type="submit" value="Encurtar"/>
+        </form>
+        <div id="result">
+            <a target="_blank" class="short-url" rel="noopener" href="/${data.short_id}">
+              ${location.origin}/${data.short_id}
+            </a>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
