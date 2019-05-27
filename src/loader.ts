@@ -1,5 +1,4 @@
 import server from './server'
-import "reflect-metadata"
 
 const PORT = (process.env.PORT || 3000)
 

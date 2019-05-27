@@ -26,11 +26,9 @@ form.addEventListener('submit', event => {
       }
 
       result.insertAdjacentHTML('afterbegin', `
-        <div class="result">
           <a target="_blank" class="short-url" rel="noopener" href="/${data.short_id}">
-            ${data.new_url}
+            ${location.origin}/${data.short_id}
           </a>
-        </div>
       `)
     })
     .catch(console.error)
